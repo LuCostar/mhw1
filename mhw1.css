@@ -1,0 +1,154 @@
+  body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+    font-family: 'Oswald', sans-serif;
+    background-color: wheat;
+    margin: -5px;
+  }
+
+  nav{
+    display:flex;
+    width:100%;
+    justify-content:space-around;
+    align-items:center;
+    height:5vh;
+    background-color:paleturquoise;
+  }
+
+  a{
+    background-color:coral;
+    border-radius:20px;
+    width: 7vh;
+    text-align: center;
+    font-size: medium;
+    padding:10px;
+    color:whitesmoke;
+  }
+
+  header{
+    
+    width:100%;
+    height:400px;
+
+    background-image: url("tea_banner.jpg");
+    background-size: cover;
+    position:relative;
+    margin-bottom: 60px;
+  }
+
+  #overlay{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0,0,0,0.3);
+    position:absolute;
+    width: 100%;
+    height:100%;
+  }
+
+  h1{
+    color: whitesmoke;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-size: 3em;
+    margin: 1vh;
+  }
+
+  #sub{
+    font-size: 1em;
+    border-bottom: 2px solid whitesmoke;
+    padding: 3px;
+  }
+
+
+  #profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 5px;
+  }
+
+  #portrait{
+    width: 100px;
+    margin-top: -110px;
+    position:absolute;
+    border-radius: 70px;
+    border: 4px solid paleturquoise;
+  }
+  
+  .container{
+    display: flex;
+    margin: 20px 6vh;
+    background-color: paleturquoise;
+    border-radius: 10px;
+    flex-direction: column;
+    max-width: 700px;
+
+  }
+
+  .position{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .index{
+    font-size: 40px;
+    height:50px;
+    width:50px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+
+    color: whitesmoke;
+    background-color: coral;
+    
+  }
+
+  .title{
+    font-size: 2em;
+    margin: 1vh 1.5vh;
+  }
+
+  .paragraph{
+    margin:10px 20px;
+  }
+
+  footer{
+    display: flex;
+    justify-content: space-around;
+    color: whitesmoke;
+    background-color: grey;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+  }
+
+  img{
+    width:100%;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 600px) {
+    body {
+      font-size: small;
+    }
+
+    a{
+      width:60px;
+    }
+    .container{
+      margin: 20px 3vh;
+    }
+    #profile{
+      line-height: 2px;
+    }
+    .title{
+      margin: 1.5vh;
+    }
+  }
